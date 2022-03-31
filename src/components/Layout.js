@@ -1,10 +1,9 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import LandingPage from "./Landing";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -48,9 +47,15 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
-      <div>{children}</div>
-      <Footer />
+      {/* <div>{children}</div> */}
+      <LandingPage 
+        title="Teeing Off Soon" 
+        description="Stay Updated On"
+        facebookLink=""
+        twitterLink=""
+        instagramLink=""
+        linkedInLink=""
+      />
     </div>
   );
 };

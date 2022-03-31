@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
+    title: "Danny Boy Links Golf Tour",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "An escorted links golf tour along the north coast of Ireland playing some of Irelands' best championship links golf courses including, Rosapenna Golf Resort, Ballyliffin Golf Club, Castlerock Golf Club, Portstewart Golf Club, Royal Portrush Golf Club, Royal County Down Golf Club, County Louth Golf Club and Portmarnock Golf Club.",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-material-ui",
     {
       resolve: "gatsby-plugin-sass",
       options: {
