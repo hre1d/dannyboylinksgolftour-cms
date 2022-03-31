@@ -4,6 +4,7 @@ import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import LandingPage from "./Landing";
+import Navbar from "./Navbar";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -22,13 +23,13 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/favicon-32x32.png`}
+          href={`${withPrefix("/")}img/dannyboy-favicon.png`}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/favicon-16x16.png`}
+          href={`${withPrefix("/")}img/dannyboy-favicon.png`}
           sizes="16x16"
         />
 
@@ -47,6 +48,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
+      {/* <Navbar /> */}
       {/* <div>{children}</div> */}
       <LandingPage 
         title="Teeing Off Soon" 

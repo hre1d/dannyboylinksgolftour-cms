@@ -596,6 +596,14 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+
+  .logoWrapper{
+    width:70% !important;
+  }
+
+  .bodyText{
+    text-shadow: none;
+  }
 }
 
 .background {
@@ -628,6 +636,7 @@ pre tt:after {
   text-align:center;
   display:flex;
   flex-direction:column;
+  width:50%;
 }
 
 .logo {
@@ -636,6 +645,11 @@ pre tt:after {
 
 .title{
   font-size: 2.8rem;
+}
+
+.bodyText{
+  font-size: 1rem;
+  line-height: 1.1rem;
 }
 
 .socialWrapper {
